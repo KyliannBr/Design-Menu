@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Custom;
+    src: url(fonts/TAKE\ CUTE.otf);
+}
+
+.wrapper {
+    background-color: #15141a;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 40%;
+    height: 60%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+a:nth-child(1) {
+    background-image: url(img1.jpg);
+}
+
+a:nth-child(2) {
+    background-image: url(img2.jpg);
+}
+
+a:nth-child(3) {
+    background-image: url(img3.jpg);
+}
+
+a:hover {
+    transition: all .5s;
+    box-shadow: inset rgb(0, 0, 0) 0px 0px 20px 10px;
+}  
+
+a {
+    font-family: Custom;
+    font-size: 3rem;
+    text-shadow: rgb(0, 0, 0) 5px 5px 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a .row::first-letter {
+    text-transform: uppercase;
+}
